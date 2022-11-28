@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E5FFE0"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/linear">
+
+    <ImageButton
+        android:src="@drawable/home"
+        android:id="@+id/home_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="25dp"
+            android:text="내일의 운세"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <ImageButton
+            android:id="@+id/button"
+            android:src="@drawable/pochun"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
